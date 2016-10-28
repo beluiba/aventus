@@ -1,0 +1,46 @@
+.btn
+	cursor: pointer
+	font-family: $body-font
+	@extend .uppercase
+	@extend .border
+	font-size: 1.2em
+	line-height: 2em
+	padding: 0.25em 1em
+	margin: 1em 0
+	background-color: $primary-color
+	color: $text
+	
+	&:hover, &:focus
+		color: $primary-color
+		background-color: transparent
+		@extend .border-focus
+
+	&.link
+		background-color: transparent
+		border: none
+		color: $warning-color
+		padding: 0.7em 0
+		@extend .light
+		
+		&:hover, &:focus
+			color: $secondary-color
+
+
+
+	&.right
+		text-align: center
+		float: right
+
+
+
+	&.left
+		text-align: center
+		float: left
+
+	&.link
+		&.right
+			margin-right: 1em
+
+
+
+

@@ -1,0 +1,32 @@
+@import "icons/variables"
+@import "icons/mixins"
+@import "icons/path"
+@import "icons/core"
+@import "icons/larger"
+@import "icons/fixed-width"
+@import "icons/list"
+@import "icons/bordered-pulled"
+@import "icons/animated"
+@import "icons/rotated-flipped"
+@import "icons/stacked"
+@import "icons/icons"
+@import "icons/screen-reader"
+
+
+$icon-font:'FontAwesome'
+
+
+.icon
+	&:before
+		font-family: $icon-font
+		font-size: 1.3em
+		margin-right: 0.25em
+		float: left
+		line-height: 1.35em
+
+
+	&.right
+		&:before
+			float: right
+			margin-left: 0.25em
+			margin-right: 0

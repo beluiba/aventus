@@ -1,0 +1,45 @@
+@import "font/open-sans"
+
+$body-font: 'Open Sans'
+$body-font-italic: 'Open Sans Italic'
+$body-font-bold: 'Open Sans Bold'
+$body-font-bold-italic: 'Open Sans Bold Italic'
+$body-font-semibold: 'Open Sans Semibold'
+$body-font-semibold-italic: 'Open Sans Semibold Italic'
+$body-font-extrabold: 'Open Sans Extrabold'
+$body-font-extrabold-italic: 'Open Sans Extrabold Italic'
+$body-font-light: 'Open Sans Light'
+$body-font-light-italic: 'Open Sans Light Italic'
+
+
+
+body
+    font-family: $body-font
+
+.regular
+    font-family: $body-font
+
+.light
+    font-family: $body-font-light
+
+
+.bold
+    font-family: $body-font-extrabold
+
+.extrabold
+    font-family: $body-font-extrabold
+
+.upper
+    text-transform: uppercase
+
+
+h1, h2, h3
+    @extend .regular
+
+
+h4, h5, h6
+    @extend .regular
+
+
+p
+    @extend .light

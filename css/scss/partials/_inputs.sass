@@ -1,0 +1,56 @@
+input
+	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
+
+		padding: 0
+		outline-width: 0
+		border: none
+		border-bottom: solid 1px $secondary-color
+		position: relative
+		background-color: transparent
+		color: $text
+		z-index: 10
+		margin-top: 0.3em
+		border-radius: 0
+		@extend .light
+		width: 100%
+
+		&:focus
+			border: none
+			border-bottom: solid 2px $secondary-color 
+
+
+@mixin placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+	
+input
+	&[type="text"], &[type="password"], &[type="email"], &[type="tel"], &[type="date"]
+		@include placeholder
+			color: $secondary-color
+
+
+.item-input
+	input
+		width: 75%
+		display: inline-block
+		float: left
+
+	button
+		@extend .btn
+		width: 25%
+		@extend .center
+		color: $primary-color
+		background-color: transparent
+		display: inline-block
+		border-color: transparent
+		&:hover
+			border-color: transparent
+			color: $text
+		&:focus
+			border-color: transparent
